@@ -8,5 +8,12 @@ public class Chapter01 {
     int age;
     age = 20;
     System.out.println("私は" + age + "歳です。");
+    
+    int version;
+    version = 1 + 5;
+    System.out.println("日記ソフト");
+    System.out.println("ver" + version);
+    System.out.println("まだ開発中です。");
+    System.out.println("終了します");
   }
 }
