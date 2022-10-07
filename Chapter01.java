@@ -15,5 +15,18 @@ public class Chapter01 {
     System.out.println("ver" + version);
     System.out.println("まだ開発中です。");
     System.out.println("終了します");
+    
+    int hoge;
+    hoge = 30;
+    System.out.println(hoge);
+    
+    boolean isError;
+    isError = true;
+    boolean  result;
+    result = false;
+    char zodiac;
+    zodiac = '壱';
+    String name; name = "すがわら";
+    System.out.println(zodiac + name);
   }
 }
