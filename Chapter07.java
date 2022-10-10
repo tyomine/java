@@ -17,8 +17,29 @@ public class Chapter07 {
     // for文による繰り返し
     // 基本できなfor文
     for (int i = 0; i < 4; i++) {
-       System.out.println("現在" + (i+1) +"周目↓");
+       System.out.print("現在" + (i+1) +"周目↓");
+       System.out.println("");
     }
     
+    // printは文字列の表示後改行しない
+    // printlnは文字列の表示後に改行する
+    // printfメソッドは、文字列を指定した書式で画面に表示するメソッド
+    
+    // 九九の表を出力する
+    for (int i = 1; i < 10; i++) {
+      for (int j = 1; j < 10; j++) {
+        System.out.print(i * j);
+        System.out.print(" ");/*空白を出力する*/
+      }
+      System.out.println("");/*改行を出力する*/
+    }
+    
+    // break文
+    for (int i = 1; i < 10; i++) {
+      if (i == 4) {
+        break;
+      }
+      System.out.println(i);
+    }
   }
 }
