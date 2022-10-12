@@ -71,5 +71,10 @@ public class Chapter08 {
     for (int value : score4) {
       System.out.println(value);
     }
+    
+    // 多次元の配列
+    int[][] score5 = {{40, 50, 60}, {80, 60, 70}};
+    System.out.println(score5.length);
+    System.out.println(score5[0].length);
   }
 }
