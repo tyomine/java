@@ -1,28 +1,16 @@
 public class Chapter09 {
-  public static void main(String[] args) {
-    System.out.println("メソッドを呼び出します。");
-    hello("ワタル");
-    hello("アスカ");
-    hello("アヤナミ");
-    System.out.println("メソッドの呼び出しが終わりました。");
-    System.out.println("複数の引数を渡したねを呼び出します");
-    add(100, 20);
-    add(200, 50);
-    // 戻り値を使った表示
-    int ans = abb(100, 10);
-    System.out.println("100 + 10 =" + ans);
-  }
-  public static void hello(String name) {
-    System.out.println(name + "さん、こんにちわ！");
-  }
-  // 複数の値を受け取るメソッド
-  public static void add(int x, int y) {
-    int ans = x + y;
-    System.out.println(x + "+" + y + "=" + ans);
-  }
-  // 戻り
-  public static int abb(int a, int b) {
-    int ans = a + b;
-    return ans;
-  }
+	public static void main(String[] args) {
+		double triangleArea = calcTriangleArea(10.0, 5.0);
+		System.out.println("三角形の面積:" + triangleArea + "平方cm");
+		double circleArea = calcCircleArea(5.0);
+		System.out.println("円の面積:" + circleArea + "平方cm");
+	}
+	public static double calcTriangleArea(double bottom, double heigth) {
+		double area = (bottom * heigth) / 2;
+		return area;
+	}
+	public static double calcCircleArea(double radius) {
+		double area = radius * radius * 3.14;
+		return area;
+	}
 }
