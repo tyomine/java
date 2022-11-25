@@ -1,12 +1,18 @@
 public class Chapter11 {
-  //int型配列を受け。全ての要素を表示するメソッド
-  public static void printArray(int[] array) {
-    for (int element : array) {
-      System.out.println(element);
-    }
-  }
-  public static void main(String[] args) {
-    int[] array = {1, 2, 3};
-    printArray(array); //配列を渡す
-  }
+	public static void main(String[] args) {
+		int num1;
+		String str1;
+		num1 = 10;
+		str1 = "Hello world!";
+		System.out.println(num1);
+		System.out.println(str1);
+
+		num1 = 20;
+		System.out.println(num1);
+		int num2 = 30;
+		System.out.println(num2);
+
+		final int MIN_NUMBER = 50;
+		System.out.println(MIN_NUMBER);
+	}
 }
